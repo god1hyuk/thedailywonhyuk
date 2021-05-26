@@ -1,0 +1,274 @@
+/* reset css */
+@import url(reset.css);
+
+/* font css */
+
+/* bungee */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #fff0d9;
+    overflow-x: hidden;
+}
+/* header */
+
+/* title */
+header {
+    width: 98%;
+    margin: 0 auto;
+}
+header .date > p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+header .title_wrap {
+    margin-top: 20px;
+}
+header .date {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-size: 20px;
+} 
+header .title_the {
+position: relative;
+font-family: "Italianno", cursive;  
+font-size: 80px;
+text-align: center;
+}
+header .title_the:before,
+header .title_the:after {
+display: block;
+content: '';
+height: 4px;
+background-color: #333;
+width: 46%;
+top: 45px;
+position: absolute;
+}
+header .title_the:after {
+right: 0;
+width: 45%;
+}
+header .title {
+font-family: "Bungee";
+font-size: 120px;
+text-align: center;
+padding: 0 0 1rem;
+border-bottom: 5px solid #333;
+letter-spacing: -10px;
+}
+header .title span {
+color: rgb(177, 134, 89);
+}
+
+/* menu */
+header nav .menu {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #333;
+}
+header nav .menu a {
+    display: block;
+    padding: 24px 32px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Bungee";
+}
+header nav .menu a:hover {
+    color: rgb(177, 134, 89);
+    transition: all 0.1s linear;
+}
+header nav .menu a.active {
+    color: rgb(177, 134, 89);
+}
+
+/* header end */
+section {
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* headline  */
+
+.home .title {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #333;
+}
+.home .main_article {
+    margin-top: 30px; 
+}
+.home .main_article img {
+    width: 100%;
+}
+.home .main_title h2 {
+    font-family: "Pathway Gothic One", Impact;
+    font-weight: bold;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: .85;
+    letter-spacing: -4px;
+    padding-top: 0;
+    padding-left: 8px;
+    text-align: center;
+}
+.home .main_title span {
+    background-color: #333;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    padding: 28px 0;
+    font-family: "Pathway Gothic One", Impact;
+    text-transform: uppercase;
+    font-size: 120px;
+    text-align: center;
+}
+.home .main_article p {
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+
+/* weather */
+.home .weather {
+    margin-top: 30px;
+}
+.home .weather_wrap {    
+    /* background: #fff; */
+    border: 5px solid #333;
+}
+.home .weather_wrap .city {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+.home .weather_main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+.home .weather_main .icon {
+    width: 50%;
+}
+.home .weather_main .temp {
+    width: 50%;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.home .weather .icon > img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.home .weather .daily_wrap {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.home .weather #weather_daily {
+    width: 100%;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+.home .weather .daily_day {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.home .weather .daily_icon {
+    margin-top: 1rem;
+}
+.home .weather .daily_icon > img {
+    width: 70%;
+}
+.home .weather .daily_temp_max {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+.home .weather .daily_temp_min {
+    margin-top: 8px;
+    font-size: 0.8rem;
+}
+.home .weather button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 20px;
+    border: none;
+    background: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+/* Banner Chabagi */
+.home .banner_chabagi {
+    position: relative;
+    margin-top: 30px;
+}
+.home .banner_chabagi:hover {
+    cursor: zoom-in;
+}
+.home .chabagi_wrap img {
+    position: absolute;
+    width: 100%;
+}
+.home .chabagi_wrap img:first-child {
+    opacity: 1;
+    animation: chabagi1 0.3s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    z-index: 1;
+}
+.home .chabagi_wrap img:last-child {
+    opacity: 0;
+    animation: chabagi2 0.3s linear infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 1);
+    z-index: 1;
+}
+@keyframes chabagi1 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes chabagi2 {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.home .banner_chabagi .finger {
+    opacity: 0;
+}
+.home .banner_chabagi:hover .finger {
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+
+.home .banner_chabagi .pointer {
+    opacity: 0;
+}
+.home .banner_chabagi:hover .pointer {
+    animation: pointer 2s linear infinite;
+}
+@keyframes pointer {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
