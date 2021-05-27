@@ -13,8 +13,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background: #fff0d9;
+    /* background: #fff0d9; */
+    background: #eee;
     overflow-x: hidden;
 }
 /* header */
@@ -140,14 +155,13 @@ section {
 .home .weather {
     margin-top: 30px;
 }
-.home .weather_wrap {    
-    /* background: #fff; */
+.home .weather_wrap {
     border: 5px solid #333;
 }
 .home .weather_wrap .city {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 .home .weather_main {
@@ -213,30 +227,61 @@ section {
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
+}
 
+.home .clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 35px;
+    background: #333;
+}
+.home .clock:hover {
+    cursor: pointer;
+}
+.home .clock h1 {
+    width: 20%;
+    font-family: 'Calculator';
+    /* font-family: 'alarm clock'; */
+    text-align: center;
+    color: #eee;
+    transition: all 0.2s linear;
+}
+.home .clock .meridiem {
+    font-size: 2rem;
+}
+.home .clock .hour,
+.home .clock .minutes, 
+.home .clock .colon { 
+    font-size: 4rem;
+}
+.home .clock .seconds {
+    font-size: 1.5rem;
 }
 
 /* Banner Chabagi */
 .home .banner_chabagi {
     position: relative;
+    width: 100%;
+    height: 150px;
     margin-top: 30px;
-}
-.home .banner_chabagi:hover {
-    cursor: zoom-in;
 }
 .home .chabagi_wrap img {
     position: absolute;
+    left: 0;
     width: 100%;
 }
 .home .chabagi_wrap img:first-child {
     opacity: 1;
-    animation: chabagi1 0.3s linear infinite;
+    animation: chabagi1 0.3s ease infinite;
     animation-timing-function: cubic-bezier(0, 1, 0, 1);
     z-index: 1;
 }
 .home .chabagi_wrap img:last-child {
     opacity: 0;
-    animation: chabagi2 0.3s linear infinite;
+    animation: chabagi2 0.3s ease infinite;
     animation-timing-function: cubic-bezier(0, 1, 0, 1);
     z-index: 1;
 }
@@ -251,24 +296,6 @@ section {
     100% { opacity: 0; }
 }
 
-.home .banner_chabagi .finger {
-    opacity: 0;
-}
-.home .banner_chabagi:hover .finger {
-    opacity: 1;
-    transition: all 0.7s linear;
-}
+.vinally_article {
 
-.home .banner_chabagi .pointer {
-    opacity: 0;
 }
-.home .banner_chabagi:hover .pointer {
-    animation: pointer 2s linear infinite;
-}
-@keyframes pointer {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-
