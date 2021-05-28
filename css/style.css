@@ -228,7 +228,12 @@ section {
     font-weight: 700;
     color: #fff;
 }
+.home .weather button:hover {
+    transform: translateY(2px);
+    transition: all 0.2s ease;
+}
 
+/* clock */
 .home .clock {
     display: flex;
     justify-content: center;
@@ -296,41 +301,107 @@ section {
     100% { opacity: 0; }
 }
 
-.home .psycological {
+/* psycological test */
+.home .mbti {
     width: 100%;
-    height: 100%;
-    background: url('../images/test_sky.jpg') no-repeat;
+    padding: 50px 0;
+    background: url('../images/test_sky2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
-.home .psycological h1 {
-    font-size: 8rem;
+.home .mbti:hover button {
+    background: #fcb800;
+    transition: all 0.2s ease;
 }
-.home .vinally_center h2 {
+.home .mbti h3 {
+    padding: 20px 0;
+    background: rgba(51, 51, 51, 0.600);
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.home .mbti p {
+    padding-top: 30px;
+    font-size: 3rem;
+    /* color: #fcb800; */
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+.home .mbti span {
+    display: block;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #fcb800; */
+    color: #333;
+    text-align: center;
+}
+.home .mbti img {
+    display: block;
+    width: 80%;
+    margin: 80px auto;
+}
+.home .mbti:hover img {
+    animation: airplane 1.5s ease-in-out;
+}
+@keyframes airplane {
+    from { transform: translateX(-100px) scale(0.5); }
+    to { transform: translateX(0px) scale(1); }
+}
+.home .mbti button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px 30px;
+    /* background: #fcb800; */
+    background: #333;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    border: none;
+}
+.home .mbti button:hover {
+    transform: translateY(2px);
+    transition: all 0.2s ease;
+}
+
+/* vinally_article */
+.home .vinally_article .vinally_center h2 {
     font-size: 3rem;
     font-weight: 600;
 }
-.home .vinally_center p {
+.home .vinally_article .vinally_center p {
     padding-top: 30px;
     font-size: 1.2rem;
 }
-.home .vinally_center img {
+.home .vinally_article .vinally_center img {
     display: block;
     width: 100%;
     margin: 0 auto;
     padding-top: 30px;
 }
 
-.home .vinally_right img {
+.home .vinally_article .vinally_right img {
     width: 100%;
 }
-.home .vinally_right button {
+.home .vinally_article .vinally_right p {
+    padding-top: 20px;
+}
+.home .vinally_article .vinally_right button {
     display: block;
-    margin: 30px auto;
-    padding: 15px 20px;
+    margin: 20px auto;
+    padding: 20px 30px;
     border: none;
     background: #333;
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
+}
+.home .vinally_article .vinally_right button:hover {
+    transform: translateY(2px);
+    transition: all 0.2s ease;
 }
