@@ -296,6 +296,41 @@ section {
     100% { opacity: 0; }
 }
 
-.vinally_article {
+.home .psycological {
+    width: 100%;
+    height: 100%;
+    background: url('../images/test_sky.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .psycological h1 {
+    font-size: 8rem;
+}
+.home .vinally_center h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.home .vinally_center p {
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+.home .vinally_center img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
 
+.home .vinally_right img {
+    width: 100%;
+}
+.home .vinally_right button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 20px;
+    border: none;
+    background: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
 }
